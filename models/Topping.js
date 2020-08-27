@@ -6,12 +6,8 @@ Topping.init({
     type: DataTypes.STRING,
     allowNull: false
   },
-  drizzle: {
+  type: {
     type: DataTypes.INTEGER,
-    allowNull: false
-  },
-  sprinkle: {
-    type: DataTypes.STRING,
     allowNull: false
   }
 }, { sequelize, modelName: 'toppings' })

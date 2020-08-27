@@ -15,7 +15,7 @@ router.get('/toppings/:id', (req, res) => {
 // POST one topping
 router.post('/toppings', (req, res) => {
   Topping.create(req.body)
-    .then(user => res.json(topping))
+    .then(topping => res.json(topping))
     .catch(err => console.log(err))
 })
 // PUT one topping
